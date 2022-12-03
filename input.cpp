@@ -400,7 +400,7 @@ static Input* createInput(int player, int type)
 	}
 }
 
-void setInputs() throw (std::bad_alloc)
+void setInputs()
 {
 	if (input1)
 		delete input1;

@@ -1,4 +1,4 @@
-VORBISLIBSLINUX=-lvorbisfile -lvorbis -logg -llogg
+VORBISLIBSLINUX=-llogg -lvorbisfile -lvorbis -logg
 VORBISLIBSWIN=-lvorbisfile -lvorbis -logg -llogg
 LINUXLIBS=-lm $(VORBISLIBSLINUX) -lalleggl `allegro-config --static` -lGL -lGLU -lglut -ltgui
 WINLIBS=-lm $(VORBISLIBSWIN) -ltgui -lagl -lalleg -luser32 -lgdi32 -lopengl32 -lglu32 -lglut32

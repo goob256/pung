@@ -169,7 +169,7 @@ public:
 
 extern void setVolumes(int sfxVolume, int musicVolume);
 
-extern void setInputs() throw (std::bad_alloc);
+extern void setInputs();
 extern void handleInput(int step);
 
 const int FLASH_OFF = 0;

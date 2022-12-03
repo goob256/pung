@@ -77,7 +77,7 @@ static void darken(BITMAP* bmp)
 class WriteError {};
 class ReadError {};
 
-static void iputl(long l, FILE *f) throw (WriteError)
+static void iputl(long l, FILE *f)
 {
 	if (fputc(l & 0xFF, f) == EOF) {
 		throw new WriteError();
@@ -93,7 +93,7 @@ static void iputl(long l, FILE *f) throw (WriteError)
 	}
 }
 
-static long igetl(FILE *f) throw (ReadError)
+static long igetl(FILE *f)
 {
 	int c1 = fgetc(f);
 	if (c1 == EOF) throw new ReadError();
